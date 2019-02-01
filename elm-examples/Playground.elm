@@ -14,13 +14,11 @@ escapeEarth velocity speed =
         "Come back"
 
 
-speed distance time =
-    distance / time
 
-
-time startTime endTime =
-    endTime - startTime
+--main =
+--Html.text (escapeEarth 11 (speed 7.67 (time 2 3))) --also written as
 
 
 main =
-    Html.text (escapeEarth 11.2 7.2)
+   escapeEarth 11 7.67
+        |> Html.text
